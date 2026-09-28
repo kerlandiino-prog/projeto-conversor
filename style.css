@@ -107,9 +107,21 @@ section:focus-within {
 /* RODAPÉ */
 
 footer {
-    margin-top: 10px;
+    margin-top: 25px;
+    text-align: center;
+}
 
-    color: #05ab69;
+.brand {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00d084;
+    letter-spacing: 1px;
+}
 
-    font-size: 14px;
+.author {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #aab4c3;
 }

@@ -5,7 +5,7 @@ let brlInput = document.querySelector("#brl")
 
 usdInput.addEventListener("keyup",()=>{
     convert("usd-to-brl")
-usdInput.addEventListener
+
 })
 
 
@@ -35,12 +35,14 @@ return formatter.format(fixedValue)
 }
 
 function fixValue(value){
-let fixedValue = value.replace("," , ".")
-let floatValue = parseFloat(fixedValue)
-if (floatValue==NaN){
-    floatValue=0
-}
-return floatValue
+    let fixedValue = value.replace(",", ".")
+    let floatValue = parseFloat(fixedValue)
+
+    if (Number.isNaN(floatValue)){
+        floatValue = 0
+    }
+
+    return floatValue
 }
 
 
